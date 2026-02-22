@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>To my amazing Woman 🤍</title>
+
+<style>
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* more romantic, soft sky-love palette */
+    background: radial-gradient(circle at top, #eaf6ff 0%, #cfe9ff 35%, #b8d7ff 60%, #f7d7e8 100%);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: #0b2447;
+    padding: 24px;
+    overflow-x:hidden;
+  }
+
+  .card{
+    width:min(860px, 95vw);
+    background: rgba(255,255,255,0.62);
+    border: 1px solid rgba(255,255,255,0.75);
+    border-radius: 22px;
+    padding: 28px 22px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 14px 40px rgba(2, 20, 60, 0.16);
+    text-align:center;
+    position:relative;
+  }
+
+  h1{
+    font-size: clamp(22px, 3.2vw, 36px);
+    margin: 0 0 8px 0;
+    letter-spacing: 0.2px;
+  }
+
+  .sub{
+    margin: 0 0 18px 0;
+    font-size: 16px;
+    opacity: 0.9;
+  }
+
+  .loveRow{
+    font-size: 22px;
+    margin-bottom: 14px;
+    user-select:none;
+  }
+
+  .btnRow{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  button{
+    border: none;
+    cursor: pointer;
+    padding: 14px 22px;
+    font-size: 16px;
+    border-radius: 999px;
+    background: rgba(11, 36, 71, 0.92);
+    color: white;
+    font-weight: 700;
+    transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+    box-shadow: 0 10px 22px rgba(2, 20, 60, 0.16);
+  }
+  button:hover{ transform: translateY(-2px) scale(1.02); }
+  button:active{ transform: translateY(0) scale(0.99); }
+  button:disabled{ opacity: 0.7; cursor: default; }
+
+  .letterWrap{
+    display:none;
+    margin-top: 22px;
+    text-align:left;
+    animation: fadeInUp 900ms ease forwards;
+  }
+
+  .letter{
+    background: rgba(255,255,255,0.94);
+    color: #102a43;
+    border-radius: 18px;
+    padding: 22px 18px;
+    line-height: 1.7;
+    font-size: 16px;
+    border: 1px solid rgba(11,36,71,0.08);
+  }
+
+  .sig{
+    margin-top: 16px;
+    font-weight: 800;
+    color: #0b2447;
+  }
+
+  .agapo{
+    margin-top: 10px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 18px;
+  }
+
+  @keyframes fadeInUp{
+    from{ opacity:0; transform: translateY(10px); }
+    to{ opacity:1; transform: translateY(0); }
+  }
+
+  /* Photo block */
+  .photoWrap{
+    display:none;
+    margin: 16px 0 0 0;
+    animation: fadeInUp 800ms ease forwards;
+  }
+
+  .photo{
+    width: min(520px, 92vw);
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 1px solid rgba(11,36,71,0.10);
+    box-shadow: 0 14px 30px rgba(2, 20, 60, 0.14);
+  }
+
+  .photoHint{
+    margin-top: 8px;
+    font-size: 13px;
+    opacity: 0.75;
+    text-align:center;
+  }
+
+  /* Floating hearts */
+  .heart{
+    position: absolute;
+    bottom: -30px;
+    font-size: 18px;
+    opacity: 0.85;
+    animation: floatUp linear forwards;
+    pointer-events:none;
+    filter: drop-shadow(0 6px 10px rgba(2,20,60,0.14));
+  }
+
+  @keyframes floatUp{
+    from { transform: translateY(0) scale(1); opacity: 0.0; }
+    10% { opacity: 0.85; }
+    to { transform: translateY(-120vh) scale(1.4); opacity: 0.0; }
+  }
+</style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="loveRow">🤍 🩵 🤍 💙 🤍</div>
+    <h1>To my amazing Woman</h1>
+    <p class="sub">Don’t click… unless you’re ready to smile.</p>
+
+    <div class="btnRow">
+      <button id="btn" onclick="reveal()">Open my heart 🩵</button>
+      <button id="photoBtn" onclick="togglePhoto()">Show our photo 📸</button>
+    </div>
+
+    <!-- Photo appears here -->
+    <div class="photoWrap" id="photoWrap">
+      <!-- Put your photo file next to index.html and name it photo.jpg (or change src) -->
+      <img class="photo" src="photo.jpg" alt="Our photo" />
+      <div class="photoHint">If you don’t see the photo, check the file name: <strong>photo.jpg</strong></div>
+    </div>
+
+    <div class="letterWrap" id="wrap">
+      <div class="letter">
+        <p><strong>My Love, My Bebo</strong></p>
+
+        <p>Happy 6 months to us… and our very first Valentine’s Day together. 🤍</p>
+
+        <p>
+          I don’t even know where to start, because six months with you feels both so fast and so full at the same time.
+          Thank you for being the woman of my life, for standing by me, encouraging me, and supporting me in every single situation.
+        </p>
+
+        <p>
+          So far, we’ve created so many beautiful memories together. Every laugh, every late-night call, every moment we shared — even from a distance — is precious to me.
+          And honestly, I can’t wait for all the memories that are still waiting for us. This is only the beginning.
+        </p>
+
+        <p>
+          When I look at what we’ve accomplished together, especially while being long-distance, I feel so proud of us.
+          It’s not always easy. Sometimes it’s hard. Sometimes we miss each other more than words can explain.
+          But my love for you is stronger than the distance, stronger than the difficult days, stronger than anything that tries to stand between us.
+        </p>
+
+        <p>
+          The fact that you came to see me in Paris several times… that means everything to me.
+          You have no idea how much I appreciate that.
+          Every time you chose to travel just to spend time with me, you chose us.
+          And I will never take that for granted.
+        </p>
+
+        <p>
+          You are my peace, my motivation, my safe place. With you, I feel understood, supported, and deeply loved.
+          You inspire me to become a better man — not just for myself, but for us, for our future.
+        </p>
+
+        <p>
+          I love you with all my heart. Completely. Deeply. Honestly.
+          And I cannot wait for the day when distance is no longer part of our story — when I get to wake up next to you,
+          build a home with you, and live life together, side by side.
+        </p>
+
+        <p>
+          Happy 6 months, my love.<br>
+          Happy first Valentine’s.<br>
+          To us — and to forever.
+        </p>
+
+        <p class="sig">Always yours,<br>Anas</p>
+        <p class="agapo">Σ’ΑΓΑΠΩ</p>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function reveal(){
+    const wrap = document.getElementById("wrap");
+    const btn = document.getElementById("btn");
+
+    wrap.style.display = "block";
+    btn.textContent = "🤍";
+    btn.disabled = true;
+
+    // start floating hearts
+    startHearts();
+  }
+
+  function togglePhoto(){
+    const w = document.getElementById("photoWrap");
+    const b = document.getElementById("photoBtn");
+    const isShown = (w.style.display === "block");
+    w.style.display = isShown ? "none" : "block";
+    b.textContent = isShown ? "Show our photo 📸" : "Hide photo 🤍";
+  }
+
+  function startHearts(){
+    const hearts = ["🤍","💙","🩵","💗","💕","💘"];
+    setInterval(() => {
+      const el = document.createElement("div");
+      el.className = "heart";
+      el.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+      el.style.left = Math.random() * 100 + "vw";
+      el.style.animationDuration = (4 + Math.random()*3) + "s";
+      el.style.fontSize = (16 + Math.random()*18) + "px";
+      document.body.appendChild(el);
+
+      setTimeout(() => el.remove(), 8000);
+    }, 250);
+  }
+</script>
+</body>
+</html>
